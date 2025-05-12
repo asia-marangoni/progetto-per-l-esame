@@ -6,6 +6,8 @@ body {
   }
 
 
+
+
   /*MENU*/
 .main-nav ul { 
   margin: auto;
@@ -77,18 +79,9 @@ body {
 .container .chisono {
   padding-left: 20px;
   margin-left: 100px;
-  font-size: 2vw;
+  font-size: 1.3vw;
 }
 
-@media  screen and (max-width: 900px) {
-
-  body {
-    font-size: 2.8vw;
-  }
-  .main-nav ul li a {
-    font-size: 2vw;
-  }
-}
 
 /*LAVORI*/
 .contenitor {
@@ -186,7 +179,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #f0dc68;
+  background-color: #ffbb55;
   color: rgb(255, 255, 255);
   transition: 0.5s;
 }
@@ -208,11 +201,64 @@ input[type=submit]:hover {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
+
+
+/*MOBILE*/
+@media  screen and (max-width: 900px) {
+
+  body {
+    font-size: 3.4vw;
   }
+
+  /*MENU*/
+.main-nav ul { 
+  gap: 4px;
+}
+
+.main-nav ul li a {
+  padding: 11px 20px;
+  font-size: 2.6vw;
+}
+
+.main-nav ul li a:hover {
+  padding: 13px 24px 13px 24px;
+}
+
+  /*CHI SONO*/
+#CHISONO {
+  padding: 0 0 3px 0;
+}
+
+.container {
+  flex-wrap: wrap;
+}
+.container img {
+  width: 54%;
+  flex-basis: 70%;
+  order: 1;
+}
+
+.container .chisono {
+  padding: 10px 15px 10px 15px;
+  margin: 15px 15px 0 15px;
+  font-size: 3.1vw;
+  flex-wrap: wrap;
+  order: 2;
+}
+
+  /*LAVORI*/
+
+  #LAVORI {
+    padding-top: 8px;
+  }
+  .contenitor {
+    display: list-item;
+  }
+  .responsive {
+    padding: 0 20% 0 20%;
+  width: 100%;
+  }
+
 }
 
 /*TAROCCHI*/
